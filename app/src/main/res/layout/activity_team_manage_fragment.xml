@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- 上边主页面 -->
+
+    <fragment
+        android:id="@+id/fragement_main"
+        android:name="com.blueant.Fragment.ProjectManageFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        tools:layout="@layout/activity_team_project_manage"
+        />
+
+    <fragment
+        android:id="@+id/fragement_search"
+        android:name="com.blueant.Fragment.MemberManageFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        tools:layout="@layout/activity_team_member_mamage"/>
+
+
+
+    <!-- 底部菜单页面 -->
+
+    <RadioGroup
+        android:id="@+id/bottomRg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="#ff202375"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbOne"
+            style="@style/rg_btn_style"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_five_btn_selector"
+            android:text="项目管理" />
+
+        <RadioButton
+            android:id="@+id/rbTwo"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/rb_four_btn_selector"
+            android:text="成员管理" />
+
+
+    </RadioGroup>
+
+</LinearLayout>

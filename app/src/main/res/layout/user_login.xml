@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/login_background"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/et_useraccount"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="userName"
+            android:drawableLeft="@drawable/nothing"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dip"   />
+
+        <EditText
+            android:id="@+id/et_userpassword"
+            android:layout_width="300dp"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_edittext"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/nothing"
+            android:layout_below="@id/et_useraccount"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:hint="password"
+
+            android:scrollHorizontally="true" />
+            <!--<TextView
+                android:id="@+id/tv_useraccount"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="25dip"
+                android:gravity="bottom"
+                android:text="帐号:"
+                android:textColor="#000000"
+                android:textSize="18sp" />-->
+
+        <!--  <TextView
+            android:id="@+id/tv_userpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_below="@id/et_useraccount"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="10dip"
+            android:gravity="bottom"
+            android:text="密码:"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />-->
+
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/cb_rememberpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_userpassword"
+            android:layout_marginLeft="12dip"
+            android:text="记住密码"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            >
+        </TextView>
+        <CheckBox
+            android:id="@+id/cb_autologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cb_rememberpassword"
+            android:layout_marginLeft="12dip"
+            android:text="自动登录"
+            android:textStyle="bold"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/btn_login"
+            android:layout_width="130dip"
+            android:layout_height="45dip"
+
+            android:gravity="center"
+            android:src = "@drawable/login"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            >
+        </TextView>
+        <ImageButton
+            android:src = "@drawable/register"
+            android:id="@+id/btn_register"
+            android:layout_width="130dip"
+            android:layout_height="45dip"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

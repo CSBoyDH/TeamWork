@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="团队名"
+            android:textSize="@dimen/teamName_size"
+            android:layout_gravity="left"
+            android:layout_alignTop="@+id/personaltask_time"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/team_character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="角色"
+            android:textSize="@dimen/teamCharacter_size"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal">
+
+        <TextView
+            android:id="@+id/tv_teamleader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="队长："
+            android:textSize="@dimen/teamleader_size"
+            android:layout_gravity="left"/>
+        <TextView
+            android:id="@+id/team_leader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXX"
+            android:textSize="@dimen/teamleader_size"
+            android:layout_gravity="left"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/title_bar_style" >
+
+    <ImageButton
+        android:id="@+id/setting"
+        android:layout_width="@dimen/head_size"
+        android:layout_height="@dimen/head_size"
+
+        android:background="@drawable/bg_head"
+        android:padding="2.0dip"
+        android:src="@drawable/default_round_head"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/btn_notice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+
+    <ImageButton
+
+        android:layout_width="@dimen/head_size"
+        android:layout_height="@dimen/head_size"
+        android:id="@+id/btn_add"
+        android:background="@drawable/personal_addtask"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        />
+
+    <ImageButton
+        android:layout_width="@dimen/head_size"
+        android:layout_height="@dimen/head_size"
+        android:id="@+id/btn_notice"
+
+        android:background="@drawable/btn_notice_existnotice"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btn_add"
+        android:layout_toStartOf="@+id/btn_add"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- 上边主页面 -->
+
+    <fragment
+        android:id="@+id/fragment_personal_manage"
+        android:name="com.blueant.Fragment.PersonalManageFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        tools:layout="@layout/activity_personal_manage" />
+    <!---->
+
+    <fragment
+        android:id="@+id/fragment_share"
+        android:name="com.blueant.Fragment.ShareFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        tools:layout="@layout/share" />
+
+    <fragment
+        android:id="@+id/fragment_team_manage"
+        android:name="com.blueant.Fragment.TeamManageFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        tools:layout="@layout/activity_team_manage" />
+
+    <!-- 底部菜单页面 -->
+
+    <RadioGroup
+        android:id="@+id/main_bottomRg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="#ff2935D1"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_personal_manage"
+            style="@style/rg_btn_style"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_one_btn_selector"
+             />
+
+        <RadioButton
+            android:id="@+id/rb_share"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/rb_two_btn_selector"
+            android:text="动态分享" />
+
+        <RadioButton
+            android:id="@+id/rb_team_manage"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/rb_three_btn_selector"
+            android:text="团队管理" />
+    </RadioGroup>
+
+</LinearLayout>

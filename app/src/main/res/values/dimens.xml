@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="head_size">40.0dip</dimen>
+    <dimen name="shadow_width">15.0dip</dimen>
+    <dimen name="slidingmenu_offset">50.0dip</dimen>
+    <dimen name="left_drawer_avatar_size">48.0dip</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="title_bar_height">44.0dip</dimen>
+    <dimen name="datetimepicker_width">250dip</dimen>
+    <dimen name="datetimepicker_height">90dip</dimen>
+    <dimen name="taskName_size">20dip</dimen>
+    <dimen name="taskContent_size">17dip</dimen>
+    <dimen name="personalTaskState_size">35dip</dimen>
+    <dimen name="shareName_size">20dip</dimen>
+    <dimen name="shareContent_size">20dip</dimen>
+    <dimen name="teamName_size">20dip</dimen>
+    <dimen name="teamCharacter_size">15dip</dimen>
+    <dimen name="teamleader_size">17dip</dimen>
+    <dimen name="projectName_size">20dip</dimen>
+    <dimen name="projectContent_size">17dip</dimen>
+    <dimen name="projectState_size">17dip</dimen>
+    <dimen name="projectStartTime_size">12dip</dimen>
+    <dimen name="projectFinishTime_size">12dip</dimen>
+    <dimen name="memberName_size">20dip</dimen>
+    <dimen name="memberContact_size">15dip</dimen>
+    <dimen name="projectTaskName_size">20dip</dimen>
+    <dimen name="projectTaskContent_size">17dip</dimen>
+    <dimen name="projectTaskState_size">15dip</dimen>
+    <dimen name="addmemberName_size">20dip</dimen>
+    <dimen name="addmemberContact_size">15dip</dimen>
+    <dimen name="addmemberEmail_size">15dip</dimen>
+    <dimen name="noticeTeamName_size">20dip</dimen>
+    <dimen name="noticeTeamLeader_size">15dip</dimen>
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/login_background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <TextView
+                android:id="@+id/tv_useraccount"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="25dip"
+                android:gravity="bottom"
+                android:text="帐号:"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_useraccount"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_below="@id/tv_useraccount"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="10dip" />
+
+            <TextView
+                android:id="@+id/tv_userpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_below="@id/et_useraccount"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="10dip"
+                android:gravity="bottom"
+                android:text="密码:"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_userpassword"
+                android:layout_width="fill_parent"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:layout_height="40dip"
+                android:layout_below="@id/tv_userpassword"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="10dip"
+                android:maxLines="200"
+                android:password="true"
+                android:scrollHorizontally="true" />
+
+            <CheckBox
+                android:id="@+id/cb_rememberpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_userpassword"
+                android:layout_marginLeft="12dip"
+                android:text="记住密码"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/cb_autologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb_rememberpassword"
+                android:layout_marginLeft="12dip"
+                android:text="自动登录"
+                android:textColor="#000000" />
+
+
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/btn_login"
+            android:layout_width="130dip"
+            android:layout_height="50dip"
+
+            android:gravity="center"
+            android:src = "@drawable/login"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+            android:src = "@drawable/register"
+            android:id="@+id/btn_register"
+            android:layout_width="130dip"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
